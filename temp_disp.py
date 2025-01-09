@@ -1,4 +1,3 @@
-
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
@@ -81,13 +80,13 @@ p = 0
 
 while True:
 
-    p = pot.value
-    g = (p /MAXpot) * 3.3
-    q = (g - 0.5) * 100
-    f = (q*(1.8) + 32.0)
-    g = round(f,2)
+    a = pot.value
+    b = (a /MAXpot) * 3.3
+    c = (b - 0.5) * 100
+    d = (c*(1.8) + 32.0)
+    e = round(d,2)
     print(f)
-    text = str (g) + " Deg F"
+    text = str (e) + " Deg F"
     text_area = label.Label(terminalio.FONT, text=text, color=TEXT_COLOR)
     text_width = text_area.bounding_box[2] * FONTSCALE
     text_group = displayio.Group(
@@ -99,7 +98,10 @@ while True:
     splash.append(text_group)
 
     # add label to group that is showing on display
-    updating_label.text = str (g)
+    updating_label.text = str (e)
     time.sleep(5)
     splash.remove(text_group)
+
+
+https://github.com/DANGDAN1/Temperature/blob/main/temp_disp.py
 
