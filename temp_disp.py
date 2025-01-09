@@ -103,5 +103,3 @@ while True:
     splash.remove(text_group)
 
 
-https://github.com/DANGDAN1/Temperature/blob/main/temp_disp.py
-
