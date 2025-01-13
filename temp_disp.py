@@ -85,7 +85,7 @@ while True:
     c = (b - 0.5) * 100
     d = (c*(1.8) + 32.0)
     e = round(d,2)
-    print(f)
+    print(e)
     text = str (e) + " Deg F"
     text_area = label.Label(terminalio.FONT, text=text, color=TEXT_COLOR)
     text_width = text_area.bounding_box[2] * FONTSCALE
